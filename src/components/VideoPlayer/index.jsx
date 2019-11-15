@@ -5,9 +5,14 @@ import './index.css';
 
 
 export default class VideoPlayer extends React.Component {
+  constructor(props) {
+    super(props);
+    //this.state = props;
+  }
   componentDidMount() {
     this.player = videojs(this.videoNode, this.props);
   }
+
 
   componentWillUnmount() {
     if (this.player) {
@@ -19,7 +24,7 @@ export default class VideoPlayer extends React.Component {
     return (
       <div>
         <div data-vjs-player>
-          <video ref={(node) => { this.videoNode = node; }} className="video-js" />
+          <video ref={(node) => { this.videoNode = node; }} className="video-js" data-setup='{"fluid": true}' />
         </div>
       </div>
     );
