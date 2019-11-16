@@ -5,14 +5,9 @@ import './index.css';
 
 
 export default class VideoPlayer extends React.Component {
-  constructor(props) {
-    super(props);
-    //this.state = props;
-  }
   componentDidMount() {
     this.player = videojs(this.videoNode, this.props);
   }
-
 
   componentWillUnmount() {
     if (this.player) {
