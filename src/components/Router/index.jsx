@@ -7,7 +7,7 @@ const Routing = (
   <Router>
     <div>
       <Route exact path="/" component={App} />
-      <Route path="/Player" component={VideoTester} />
+      <Route sensitive={false} path="/Player" component={VideoTester} />
     </div>
   </Router>
 );

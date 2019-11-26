@@ -40,7 +40,7 @@ class VideoTester extends Component {
         />
         <form className="form">
           <div className="videoLabel">
-            <input className="videoURL" name="location" type="text" value={url} />
+            <input className="videoURL" name="location" type="text" defaultValue={url} onChange={this.onChange} />
           </div>
           <div className="buttonDiv">
             <input className="buttonSubmit" type="submit" value="Submit" />
