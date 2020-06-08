@@ -1,0 +1,3 @@
+[submodule "unicornflix-workshop"]
+	path = unicornflix-workshop
+	url = git@github.com:axptwig/unicornflix-workshop.git
